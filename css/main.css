@@ -1,0 +1,238 @@
+/* general styling */
+body {
+  font-family: Helvetica, Tahoma, Arial, sans-serif;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background: #16a085;
+}
+
+.header .logo {
+  color: #efefef;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.upper,
+.upper > div,
+.pricing {
+  min-height: 200px;
+  margin: 0 auto;
+}
+
+.upper {
+  height: 200px;
+}
+
+ul.images {
+  width: 100%;
+  height: 100%;
+
+}
+
+ul.images li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* table styling */
+table.pricing {
+  font-size: 14px;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+.pricing tr td,
+.pricing tr th {
+  border: solid 1px #888;
+  padding: 5px;
+}
+
+.pricing tr th {
+  background: #16a085;
+  color: #fefefe;
+  border: solid #16a085 1px;
+  border-bottom: solid 1px #aaa;
+}
+
+.pricing th.title {
+  font-size: 18px;
+}
+
+.pricing tr:nth-child(2n + 4) {
+  background: #bdc3c7;
+}
+
+.pricing .sub-heading td {
+  font-weight: bold;
+}
+.upper {
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png");
+}
+
+.upper .left {
+  float: left;
+  width: 60%;
+  border: none;
+}
+
+.left p.heading {
+  font-size: 200%;
+  color: #16a085;
+  margin: 0;
+  margin-top: 60px;
+  padding: 0 10px;
+}
+
+.left p.description {
+  margin: 0;
+  line-height: 150%;
+  color: #aaa;
+  padding: 0 10px;
+}
+
+.upper .right {
+  width: 35%;
+  float: right;
+  border: none;
+  height: 200px;
+  overflow: hidden;
+}
+
+.contacts{
+  padding: 50px;
+  position: center;
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png");
+  min-height: 300px;
+}
+
+.contacts .left{
+  float: left;
+  width: 65%;
+}
+.contacts .right{
+  float: right;
+  width: 30%;
+  padding-top: 50px;
+}
+.contacts .left .headings{
+  color: #16a085;
+  line-height: 40px;
+  line-height: 40px;
+}
+.contacts .left .headline{
+  line-height: 40px;
+}
+
+.contacts .right .eddie{
+  line-height: 50px;
+  padding-top: 20px;
+  color: red;
+  font-size: 25px;
+}
+
+
+.contacts .right .edy{
+  line-height: 40px;
+  color: red;
+  font-size: 20px;
+}
+
+.contacts .right .eddy{
+  line-height: 20px;
+  color: red;
+  font-size: 20px;
+}
+
+.contacts .right .button{
+  line-height: 50px;
+  font-size: 50px;
+}
+/* slider */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes slide{
+  0%{
+    left: 0%;
+  }
+  10%{
+    left: 0%;
+  }
+  20%{
+    left: -100%;
+  }
+  30%{
+    left: -100%;
+  }
+  40%{
+    left: -200%;
+  }
+  50%{
+    left: -200%;
+  }
+  60%{
+    left: -300%;
+  }
+  70%{
+    left: -300%;
+  }
+  80%{
+    left: -400%;
+  }
+  90%{
+    left: -400%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+#slider{
+  overflow: hidden;
+}
+
+#slider figure img{
+    float: left;
+    width: 20%;
+}
+
+#slider figure{
+  position: relative;
+  width: 500%;
+  animation: slide 10s infinite;
+}
+
+.form select {
+  font-size: 18px;
+  padding: 3px;
+  width: 150px;
+}
+
+.form input[type=button] {
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #efefef;
+  background: #16a085;
+  width: 100%;
+  text-align: center;
+  margin: 5px;
+}
+
+.footer {
+  padding: 30px;
+  background: #ddd;
+  text-align: center;
+  font-weight: bold;
+  color: #888;
+}

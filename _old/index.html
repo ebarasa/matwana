@@ -1,0 +1,218 @@
+<!Doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matwana Sacco</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<p>
+<div class="top">
+<img src="images/logo.jpg" width= "100" height= "80">
+<h1>Matwana Sacco</h1>
+</div>
+</p>
+<p>
+<div class="content">
+	<div class="upper">
+		<div class="left">
+			<p>Welcome to Matwana Sacco we offer the best sevices.</p>
+			<p>We offer Transportation of people and goods to and from Nairobi to the following destinations:</p>
+				<ul>
+					<li>Mombasa</li>
+					<li>Kisumu</li>
+					<li>Busia</li>
+				</ul>
+			<p>Travel with dignity</p>
+		</div>
+		<div class="right">
+			<p>Booking Point:</p>
+			<form action="">
+				<table>
+					<tr>
+						<td> From</td>
+						<td>
+							<select>
+								<option value=Nairobi>Nairobi</option>
+								<option value=Mombasa>Mombasa</option>
+								<option value=Kisumu>Kisumu</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>To</td>
+						<td>
+							<select name="To">
+								<option value=Nairobi>Nairobi</option>
+								<option value=Mombasa>Mombasa</option>
+								<option value=Kisumu>Kisumu</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<input type="button" value="Book" onclick="Book()"/>
+		</div>
+	</div>		
+</div>
+</p>
+<p>
+	<div class="middle">
+		<div class="left">
+			<P>
+			Take a look at some of our Transportation Vihecle:
+			</P>
+			<p>
+				<img src="images/Nganya 1.jpg" id="image" style="height:250px width:250px"/>
+			</p>
+			<P>
+				<input type="button" value="Start Slide Show" onclick="StartSlideShow()" />
+				<input type="button" value="Stop Slide Show" onclick="StopSlideShow()"/>
+			</P>
+			</br>
+
+				<div id="result"></div>
+				<script type="text/javascript">
+					var intervalid;
+					function Startslideshow(){
+						setInterval = setInterval(changeimage, 500);
+					}
+					function Stopslideshow(){
+						clearInterval(intervalid);
+					}
+					function changeimage(){
+						var imagesrc=document.getElementaryById("image").getAttribute("src");
+						var currentImageNumber=imageSrc.substrings(imageSrc.lastindexof("/") + 1,imageSrc.lastIndexof("/") + 2);
+						var newimage= ("/images/" + (Number(currentImageNumber + 1) +".jpg";
+						document.getElementaryById("result").innerHTML=newImage;
+						document.getElementaryById("image").setAttribute("src", newimage);
+					}
+				</script>
+			</div>
+			<div class="right">
+				<table class="pricing" align="center">
+					<tr>
+						<th class="title" colspan="12" align="center">Transportation Prices</th>
+					</tr>
+					<tr>
+						<th colspan="5" align="center">Human Being</th>
+						<!--<td>Goods</td></br>-->
+						<th colspan="3">Electronics</th>
+						<th colspan="3">Non-Electronics</th>
+					</tr>
+					<tr class="sub-heading">
+						<td>From</td>
+						<td>To</td>
+						<!--<td>price</td></br>-->
+						<td>Executive</td>
+						<td>VIP</td>
+						<td>Common Mwananchi</td>
+						<td>From</td>
+						<td>To</td>
+						<td>price</td>
+						<td>From</td>
+						<td>To</td>
+						<td>price</td>
+					<tr>
+						<td>Nairobi</td>
+						<td>Kisumu</td>
+						<td>2000</td>
+						<td>1500</td>
+						<td>1000</td>
+						<td>Nairobi</td>
+						<td>Kisumu</td>
+						<td>450</td>
+						<td>Nairobi</td>
+						<td>Kisumu</td>
+						<td>350</td>
+					</tr>
+					<tr>
+						<td>Nairobi</td>
+						<td>Mombasa</td>
+						<td>1500</td>
+						<td>1200</td>
+						<td>900</td>
+						<td>Nairobi</td>
+						<td>Mombasa</td>
+						<td>400</td>
+						<td>Nairobi</td>
+						<td>Mombasa</td>
+						<td>300</td>
+					</tr>
+					<tr>
+						<td>Nairobi</td>
+						<td>Busia</td>
+						<td>1700</td>
+						<td>1400</td>
+						<td>1100</td>
+						<td>Nairobi</td>
+						<td>Busia</td>
+						<td>350</td>
+						<td>Nairobi</td>
+						<td>Busia</td>
+						<td>250</td>
+					</tr>
+					<tr>
+						<td>Mombasa</td>
+						<td>Nairobi</td>
+						<td>1500</td>
+						<td>1200</td>
+						<td>900</td>
+						<td>Mombasa</td>
+						<td>Nairobi</td>
+						<td>400</td>
+						<td>Mombasa</td>
+						<td>Nairobi</td>
+						<td>300</td>
+					</tr>
+					<tr>
+						<td>Kisumu</td>
+						<td>Nairobi</td>
+						<td>1800</td>
+						<td>1300</td>
+						<td>900</td>
+						<td>Kisumu</td>
+						<td>Nairobi</td>
+						<td>450</td>
+						<td>Kisumu</td>
+						<td>Nairobi</td>
+						<td>350</td>
+					</tr>
+					<tr>
+						<td>Busia</td>
+						<td>Nairobi</td>
+						<td>1500</td>
+						<td>1200</td>
+						<td>1000</td>
+						<td>Busia</td>
+						<td>Nairobi</td>
+						<td>350</td>
+						<td>Busia</td>
+						<td>Nairobi</td>
+						<td>250</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+</div>
+</p>
+<p>
+	<div class="bottom">
+	<p>
+	<h1>More information about us click on the link below:</h1>
+	<p>
+	<a href="https://www.youtube.com/watch?v=D7m5QZbsFYg">Here</a>
+	</p>
+	</p>
+	<p>
+	<h1>Visson</h1>
+	Travel with Dignity
+	<h1>Mission</h1>
+	To develop a public transport company of high repute that is committed to quality, affordable and competitive transport services that seek to satisfy customer needs.
+	<h1>Contacts</h1>
+	Email:mtwana254@gmail.com
+	<p>Phone No:+254712345678</p>
+	</p>
+</div>
+</body>
+</html>
